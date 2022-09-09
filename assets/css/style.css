@@ -89,8 +89,11 @@
   #target {
     width: 345px;
   }
-<<<<<<< HEAD
+
+  /*logoSearch Div to align image*/
+
+  #logoSearch{
+    text-align:center;
+  }
   
-=======
->>>>>>> 514e5f03e70e517ecc5933fdaae1e25e8b8fd337
   

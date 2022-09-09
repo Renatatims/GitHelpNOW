@@ -21,7 +21,7 @@
             Home
           </a>
     
-          <a class="navbar-item">
+          <a class="navbar-item" href="./mission.html">
             Mission
           </a>
     
@@ -63,32 +63,47 @@
     
     <!--End of Navbar-->
 
+  
   <!--Main - Search Bar with Label--> 
   <section class="section">
-  <div class="container">
-          
-  </div>   
-     <img src="./assets/logo/GitHelpNOW!.png" width="auto" height="auto"|>
-     <input class="input is-link" id="userInput"  type="text" placeholder="Search By Zip Code">
-     <button class="searchBtn">Search</button>
-  <div class="control">
 
-  <!-- label-->
+    <div id="logoSearch">
+       <img src="./assets/logo/GitHelpNOW!.png" width="auto" height="auto"|>
+       <input class="input is-link" id="userInputHome"  type="text" placeholder="Please enter your ZIP Code">
+       <br></br>
+  
+    <!--  Category selection - Checkboxes--> 
+    <h2 class="has-text-weight-bold">Please select a Category</h2> 
+    <label class="checkbox">
+      <input type="checkbox">
+      Shelter
+    </label>
+  
+    <label class="checkbox">
+      <input type="checkbox">
+      Food Banks
+    </label>
+  
+    <label class="checkbox">
+      <input type="checkbox">
+      Women's shelter
+    </label>
+  
+    <label class="checkbox">
+      <input type="checkbox">
+      Mental Health Facilities
+    </label>
+  
+    <br></br>     
+       <!--Link to mp.html-->
+       <a href=./map.html><button class="button is-medium is-primary is-rounded is-align-content-center">Search</button></a>
+    </div>
+  
+    <div class="control">
+  
     
-  <label class="radio">
-    <input type="radio" name="rsvp">
-    Shelter
-  </label>
-  <label class="radio">
-    <input type="radio" name="rsvp">
-    Food
-  </label>
-  <label class="radio" disabled>
-    <input type="radio" name="rsvp" disabled>
-    Mental Health
-  </label>  <!-- End of label -->
-</div>
-</section>
-
+    <!-- End of label -->
+  </div>
+  </section>
   </body>
 </html>
