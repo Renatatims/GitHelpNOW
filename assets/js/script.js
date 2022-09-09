@@ -1,45 +1,40 @@
-// @ts-nocheck TODO remove when fixed
-// This example adds a search box to a map, using the Google Place Autocomplete
-// feature. People can enter geographical searches. The search box will return a
-// pick list containing a mix of places and predicted search terms.
-// This example requires the Places library. Include the libraries=places
-// parameter when you first load the API. For example:
-//
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 function initAutocomplete() {
-    const map = new google.maps.Map(document.getElementById("map"), {
+    var map = new google.maps.Map(document.getElementById("map"), {
         center: { lat: -33.8688, lng: 151.2195 },
         zoom: 13,
         mapTypeId: "roadmap",
     });
     // Create the search box and link it to the UI element.
-    const input = document.getElementById("pac-input");
-    const searchBox = new google.maps.places.SearchBox(input);
+    var input = document.getElementById("pac-input");
+    var searchBox = new google.maps.places.SearchBox(input);
     map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
     // Bias the SearchBox results towards current map's viewport.
-    map.addListener("bounds_changed", () => {
+    map.addListener("bounds_changed", function () {
         searchBox.setBounds(map.getBounds());
     });
-    let markers = [];
+    var markers = [];
     // Listen for the event fired when the user selects a prediction and retrieve
     // more details for that place.
-    searchBox.addListener("places_changed", () => {
-        const places = searchBox.getPlaces();
+    searchBox.addListener("places_changed", function () {
+        var places = searchBox.getPlaces();
         if (places.length == 0) {
             return;
         }
         // Clear out the old markers.
-        markers.forEach((marker) => {
+        markers.forEach(function (marker) {
             marker.setMap(null);
         });
         markers = [];
         // For each place, get the icon, name and location.
-        const bounds = new google.maps.LatLngBounds();
-        places.forEach((place) => {
+        var bounds = new google.maps.LatLngBounds();
+        places.forEach(function (place) {
             if (!place.geometry || !place.geometry.location) {
                 console.log("Returned place contains no geometry");
                 return;
             }
-            const icon = {
+            var icon = {
                 url: place.icon,
                 size: new google.maps.Size(71, 71),
                 origin: new google.maps.Point(0, 0),
@@ -48,8 +43,8 @@ function initAutocomplete() {
             };
             // Create a marker for each place.
             markers.push(new google.maps.Marker({
-                map,
-                icon,
+                map: map,
+                icon: icon,
                 title: place.name,
                 position: place.geometry.location,
             }));
@@ -65,4 +60,3 @@ function initAutocomplete() {
     });
 }
 window.initAutocomplete = initAutocomplete;
-export {};
