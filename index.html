@@ -21,7 +21,7 @@
           <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
         </a> -->
     
-    
+    <!--Navbar-->
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
           <a class="navbar-item">
@@ -66,7 +66,39 @@
         </div>
       </div>
     </nav>
-    <input
+
+    
+    <!--End of Navbar-->
+
+  <!--Main - Search Bar with Label--> 
+  <section class="section">
+  <div class="container">
+          
+  </div>   
+     <img src="./assets/logo/GitHelpNOW!.png" width="auto" height="auto"|>
+     <input class="input is-link" id="userInput"  type="text" placeholder="Search By Zip Code">
+     <button class="searchBtn">Search</button>
+  <div class="control">
+
+  <!-- label-->
+    
+  <label class="radio">
+    <input type="radio" name="rsvp">
+    Shelter
+  </label>
+  <label class="radio">
+    <input type="radio" name="rsvp">
+    Food
+  </label>
+  <label class="radio" disabled>
+    <input type="radio" name="rsvp" disabled>
+    Health
+  </label>
+</div>
+</section>
+
+   <!-- end of label-->
+   <input
       id="pac-input"
       class="controls"
       type="text"
@@ -74,6 +106,7 @@
     />
     <div id="map"></div>
 
+  
     <!-- 
      The `defer` attribute causes the callback to execute after the full HTML
      document has been parsed. For non-blocking uses, avoiding race conditions,
