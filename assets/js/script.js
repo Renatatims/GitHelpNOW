@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -27,7 +27,7 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
-=======
+
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 function initAutocomplete() {
@@ -90,4 +90,4 @@ function initAutocomplete() {
     });
 }
 window.initAutocomplete = initAutocomplete;
->>>>>>> 2ded16be219f510d55533f0269c3854330663a08
+// >>>>>>> 2ded16be219f510d55533f0269c3854330663a08
