@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHelpNOW!</title>
+    <!--BULMA STYLESHEET-->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
+    <!--GOOGLE FONTS-->
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--NAV BAR SECTION-->
+  <!--Navbar-->
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="bulma.io">
+        <img src="./githelpNOW.icon.ico">
+      </a>
+  
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item">
+          Home
+        </a>
+  
+        <a class="navbar-item">
+          Mission
+        </a>
+  
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            GitHelp!
+          </a>
+  
+          <div class="navbar-dropdown">
+            <a class="navbar-item">
+              Shelter
+            </a>
+            <a class="navbar-item">
+              Food Banks
+            </a>
+            <a class="navbar-item">
+              Mental Health
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item">
+              Report an issue
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-primary">
+              <strong>Donate</strong>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+    <!--Hero/Carousel-->
+    <section class="img-carousel">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="./assets/images/githelpnow-banner.png" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="./assets/images/food-pantry-banner.png" style="width:100%">
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="./assets/images/shelter-banner.png" style="width:100%">
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="./assets/images/Suicide-awareness-banner.png" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="./assets/images/mental-health-banner.png" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="./assets/images/" style="width:100%">
+      </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </section>
+    <!--FORM-->
+    <section class="section is-medium">
+
+      <div class="image has-image-centered">
+         <img src="githelpNOW.icon.ico">
+      </div>
+      <div>
+        <input class="input is-link" id="userInputHome"  type="text" placeholder="Please enter your ZIP Code">
+         <br></br>
+      </div>
+    
+      <!--  Category selection - Checkboxes--> 
+      
+      <h1 class="has-text-weight-bold">Please Select One or More Categories</h1> 
+        <div>
+          <label class="checkbox">
+            <input type="checkbox">
+            Shelter
+          </label>
+        </div>
+        <div>
+          <label class="checkbox">
+            <input type="checkbox">
+            Food Banks
+          </label>
+        </div>
+        <div>
+          <label class="checkbox">
+            <input type="checkbox">
+            Financial Assistance
+          </label>
+        </div>
+        <div>
+          <label class="checkbox">
+            <input type="checkbox">
+            Mental Health Facilities
+          </label>
+        </div>
+    </section>
+    <!--JAVASCRIPT FILE-->
+    <script src="app.js"></script>
+</body>
+</html>
