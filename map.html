@@ -23,23 +23,18 @@
         <a class="navbar-item" href="./index.html">
           <img src="./assets/logo/GitHelpNOW!LOGO.ico">
         </a>
-      
-      
         <div id="navbarBasicExample" class="navbar-menu">
           <div class="navbar-start">
             <a class="navbar-item" href="./index.html">
               Home
             </a>
-      
             <a class="navbar-item" href="./mission.html">
               Mission
             </a>
-      
             <div class="navbar-item has-dropdown is-hoverable">
               <a class="navbar-link">
                 GitHelp!
               </a>
-      
               <div class="navbar-dropdown">
                 <a class="navbar-item">
                   Shelter
@@ -57,7 +52,6 @@
               </div>
             </div>
           </div>
-      
           <div class="navbar-end">
             <div class="navbar-item">
               <div class="buttons">
@@ -69,42 +63,33 @@
           </div>
         </div>
       </nav>
-
      <!--Category selection-->
-
-    <h2 class="has-text-weight-bold">Please select a Category</h2> 
+    <h2 class="has-text-weight-bold">Please select a Category</h2>
     <label class="checkbox">
       <input type="checkbox">
       Shelter
     </label>
-  
     <label class="checkbox">
       <input type="checkbox">
       Food Banks
     </label>
-  
     <label class="checkbox">
       <input type="checkbox">
       Women's shelter
     </label>
-  
     <label class="checkbox">
       <input type="checkbox">
       Mental Health Facilities
     </label>
-
     <br></br>
-  
       <input
         id="pac-input"
         class="controls"
         type="text"
         placeholder="Please enter your ZIP Code"
       />
-    
     <div id="map"></div>
-
-    <!-- 
+    <!--
      The `defer` attribute causes the callback to execute after the full HTML
      document has been parsed. For non-blocking uses, avoiding race conditions,
      and consistent behavior across browsers, consider loading using Promises
@@ -114,6 +99,6 @@
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initAutocomplete&libraries=places&v=weekly"
       defer
     ></script>
-    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/mapscript.js"></script>
 </body>
 </html>
