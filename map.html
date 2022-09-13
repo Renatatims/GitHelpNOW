@@ -4,11 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--BULMA-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!--CSS-->
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     <script type="module" src="./index.js"></script>
     <title>Git Help NOW!</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    
+    
     <!-- playground-hide -->
     <script>
       const process = { env: {} };
@@ -44,35 +52,35 @@
         <a class="navbar-item" href="map.html">
           GitHelp!
         </a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+           Help Others
+          </a>
+  
+          <div class="navbar-dropdown">
+              <a class="navbar-item" href="orgs.html">
+                  Food Banks
+              </a>
+              <a class="navbar-item" href="shelters.html">
+                  Shelters
+              </a>
+      </div>
       </div>
     </div>
   </nav>
      <!--Category selection-->
-    <h2 class="has-text-weight-bold">Please select a Category</h2>
-    <label class="checkbox">
-      <input type="checkbox">
-      Shelter
-    </label>
-    <label class="checkbox">
-      <input type="checkbox">
-      Food Banks
-    </label>
-    <label class="checkbox">
-      <input type="checkbox">
-      Women's shelter
-    </label>
-    <label class="checkbox">
-      <input type="checkbox">
-      Mental Health Facilities
-    </label>
-    <p id="demo"></p>
-    <br></br>
-      <input
-        id="pac-input"
-        class="controls"
-        type="text"
-        placeholder="Please enter your ZIP Code"
-      />
+     <section class="section is-medium">
+      <div>
+        <h1>Enter your zip code to locate resources within your area</h1>
+      </div>
+      <div>
+        <input class="input is-link" id="userInputHome" type="text" placeholder="Please enter your ZIP Code">
+        <br></br>
+      </div>
+  
+      <!--  Category selection - Checkboxes-->
+
+    </section>
     <div id="map"></div>
     <!--
      The `defer` attribute causes the callback to execute after the full HTML
@@ -81,7 +89,7 @@
      with https://www.npmjs.com/package/@googlemaps/js-api-loader.
     -->
     <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initAutocomplete&libraries=places&v=weekly"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&libraries=places&callback=initAutocomplete&libraries=places&v=weekly"
       defer
     ></script>
     <script src="./assets/js/mapscript.js"></script>
