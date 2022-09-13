@@ -60,3 +60,23 @@ function initAutocomplete() {
     });
 }
 window.initAutocomplete = initAutocomplete;
+
+
+
+
+
+
+
+
+
+
+
+
+//grabbing the input on the click of the search button
+//we can plug this into the map! 
+var searchButton = $('#search-button');
+var userZipInput = $('#userInputHome');
+searchButton.on("click", function() {
+    var zipCode = userZipInput.val();
+    input.text(zipCode);
+})
