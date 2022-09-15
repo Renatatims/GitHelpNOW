@@ -204,4 +204,18 @@ h1 {
   #logoSearch{
     text-align:center;
   }
+.title {
+  font-family: "Poppins", sans-serif;
+}
+  
+.subtitle {
+  font-family: "Poppins", sans-serif;
+}
+  
+.special-subtitle {
+  font-family: "Poppins", sans-serif;
+  font-size: 3vw;
+  font-style: underline;
+}
+  
 /* >>>>>>> 2ded16be219f510d55533f0269c3854330663a08  */
