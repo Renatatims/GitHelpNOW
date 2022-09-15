@@ -88,42 +88,11 @@
         <span class="dot" onclick="currentSlide(3)"></span>
       </div>
     </section>
-    <!--FORM-->
-    <section class="section is-medium">
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 3</div>
-      <img src="./assets/images/shelter-banner.png" style="width:100%">
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">3 / 3</div>
-      <img src="./assets/images/Suicide-awareness-banner.png" style="width:100%">
-    </div>
-    <div class="mySlides fade">
-      <div class="numbertext">3 / 3</div>
-      <img src="./assets/images/mental-health-banner.png" style="width:100%">
-    </div>
-    <div class="mySlides fade">
-      <div class="numbertext">3 / 3</div>
-      <img src="./assets/images/stronger-together.png" style="width:100%">
-    </div>
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-    <br>
-    <!--
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-    -->
-  </section>
   <!--FORM-->
   <!--
   <section class="section is-medium">
 
-    <div class="image has-image-centered">
+    <div id="hand-image"class="image has-image-centered">
       <img src="./assets/logo/GitHelpNOW!LOGO.ico">
     </div>
     <div>
@@ -132,32 +101,32 @@
     </div>
   -->
     <!--  Category selection - Checkboxes-->
-
-    <!--
-    <h1 class="has-text-weight-bold">Please Select One or More Categories</h1>
-    <div>
-      <label class="checkbox">
-        <input type="checkbox">
-        Shelter
-      </label>
-    </div>
-    <div>
-      <label class="checkbox">
-        <input type="checkbox">
-        Food Banks
-      </label>
-    </div>
-    <div>
-      <label class="checkbox">
-        <input type="checkbox">
-        Financial Assistance
-      </label>
-    </div>
-    <div>
-      <label class="checkbox">
-        <input type="checkbox">
-        Mental Health Facilities
-      </label>
+    <div class="container is-max-desktop">
+      <h2 class="has-text-weight-bold">Please Select One or More Categories:</h2>
+      <div class="column is-centered">
+          <label class="checkbox">
+            <input type="checkbox">
+            Shelter
+          </label>
+      </div>
+      <div class="column is-centered">
+        <label class="checkbox">
+          <input type="checkbox">
+            Food Banks
+        </label>
+      </div>
+      <div class="column is-centered">
+        <label class="checkbox">
+          <input type="checkbox">
+          Financial Assistance
+        </label>
+      </div>
+      <div class="column is-centered">
+        <label class="checkbox">
+          <input type="checkbox">
+           Mental Health Facilities
+        </label>
+      </div>
     </div>
 
   </section>
@@ -171,5 +140,11 @@
   <script src="./assets/js/donate.js"></script>
   <script src="./assets/js/script.js"></script>
 </body>
-
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      <strong>Any Questions or Concerns?</strong> <a href = "mailto: GitHelpNOW@gmail.com">Email Us</a>
+    </p>
+  </div>
+</footer>
 </html>
