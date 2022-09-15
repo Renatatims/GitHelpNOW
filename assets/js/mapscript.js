@@ -1,5 +1,12 @@
 //Geolocation - Coordinates//
 
+var pastLat = JSON.parse(localStorage.getItem("latitude"));
+var pastLong = JSON.parse(localStorage.getItem("longitude"));
+
+var y = document.getElementById("lastCoords");
+y.innerHTML = "Your last recorded latitude: " + pastLat +
+"<br>Your last recorded Longitude: " + pastLong;
+
 var x = document.getElementById("demo");
 function getLocation() {
   if (navigator.geolocation) {
@@ -10,23 +17,37 @@ function getLocation() {
 }
 
 function showPosition(position) {
-  x.innerHTML = "Latitude: " + position.coords.latitude +
-  "<br>Longitude: " + position.coords.longitude;
+  x.innerHTML = "Current latitude: " + position.coords.latitude +
+  "<br>Current longitude: " + position.coords.longitude;
+  localStorage.setItem("latitude", position.coords.latitude);
+  localStorage.setItem("longitude", position.coords.longitude);
 }
 
 getLocation();
 
+console.log(pastLat);
+
 //end of Geolocation//
+
 
 
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 function initAutocomplete() {
-    var map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: 39.966596, lng: -100.432987 },
-        zoom: 5,
-        mapTypeId: "roadmap",
-    });
+    if (typeof pastLat == 'number') {
+        var map = new google.maps.Map(document.getElementById("map"), {
+            center: { lat: pastLat, lng: pastLong },
+            zoom: 12,
+            mapTypeId: "roadmap",
+        });
+    }
+    else {
+        var map = new google.maps.Map(document.getElementById("map"), {
+            center: { lat: 39.966596, lng: -100.432987 },
+            zoom: 5,
+            mapTypeId: "roadmap",
+        });
+    }
     // Create the search box and link it to the UI element.
     var input = document.getElementById("pac-input");
     var searchBox = new google.maps.places.SearchBox(input);
