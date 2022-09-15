@@ -25,8 +25,6 @@ function showPosition(position) {
 
 getLocation();
 
-JSON.parse()
-
 console.log(pastLat);
 
 //end of Geolocation//
