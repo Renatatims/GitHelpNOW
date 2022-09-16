@@ -97,5 +97,35 @@ function womenShelter(){
  
 womenShelter();
 
+function mentalHealth(){
+    var queryUrl = "https://partners.every.org/v0.2/search/mental?apiKey=aff405eca8c6c3b65de5c821a36553f7";
+    fetch(queryUrl).then(function(facility){
+        if(facility.ok){
+            facility.json().then(function(result){
+                var resultFacility = result;
+                var resultFacility = result;
+                console.log(resultFacility);
+
+                for (i=0; i<11; i++){
+
+                    var nameOrgResult = resultFacility.nonprofits[i].name;
+                    var descriptionOrgResult = resultFacility.nonprofits[i].description;
+                    var logoOrgResult = resultFacility.nonprofits[i].logoUrl;
+                    var profileUrl = resultFacility.nonprofits[i].profileUrl
+                //var foodBankEl = document.getElementById("foodBank" + i);
+ 
+                $("#nameMental"+i).text(nameOrgResult);
+                $("#descriptionMental"+i).text(descriptionOrgResult);
+                $("#logoMental"+i).attr("src", logoOrgResult);
+                $("#linkMental"+i).attr("href",profileUrl);
+                $("#visitBtnMental"+i).attr("href", profileUrl);
+            
+              
+            }
+            
+        })}})};
+ 
+mentalHealth();
+
 
 
