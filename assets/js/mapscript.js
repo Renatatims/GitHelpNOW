@@ -59,57 +59,118 @@ function initAutocomplete() {
 
     var inputVal = document.getElementById("pac-input").value;
     var shelterBtnEl = document.getElementById ("shelterBtn");
-
-
     var foodBanksBtnEl = document.getElementById ("foodBanksBtn");
+    var womenShelterBtnEl = document.getElementById ("womenShelterBtn");
+    var mentalHealthBtnEl = document.getElementById ("mentalBtn");
+    var financialAssiBtnEl = document.getElementById ("financialAssiBtn");
+    var publicHealthBtnEl = document.getElementById ("publicHealthBtn");
+    var lgbtqiaBtnEl = document.getElementById ("lgbtqiaBtn");
+    var culturalBtnEl = document.getElementById ("culturalBtn");
+    var milkBtnEl = document.getElementById ("milkBtn");
 
-    function userChoiceShelter(){
+    //User's choice categories - event listener added to each button, so when the user clicks, 
+    //the key-word is auto-populated in the search field
+
+    
+    //Shelters//
+    function shelter(){
         shelterBtnEl.addEventListener("click",  function (event){
             event.preventDefault();
-            input.value = "shelter";
-            
+            input.value = "Shelter";
+            input.focus();            
         })
     
     }
+   shelter();
 
-    userChoiceShelter();
-
-    function userChoiceFoodBanks(){
+    //Food Banks//
+    function foodBanks(){
         foodBanksBtnEl.addEventListener("click",  function (event){
             event.preventDefault();
-            input.value = "foodbanks";
-
+            input.value = "Foodbanks";
+            input.focus();
         })
     
     }
+    foodBanks();
 
-    userChoiceFoodBanks();
-
-    var womenShelterEl = document.getElementById ("womenShelterBtn");
-
-    function userChoiceWomenShelter(){
-        womenShelterEl.addEventListener("click",  function (event){
+    //Women Shelters//
+    function womenShelter(){
+        womenShelterBtnEl.addEventListener("click",  function (event){
             event.preventDefault();
             input.value = "Women Shelter";
-
+            input.focus();           
         })
     
     }
+    womenShelter();
 
-    userChoiceWomenShelter();
-
-    var womenShelterEl = document.getElementById ("MentalBtn");
-    function mentalHealth(){
-        womenShelterEl.addEventListener("click",  function (event){
+    //Mental Health//
+      function mentalHealth(){
+        mentalHealthBtnEl.addEventListener("click",  function (event){
             event.preventDefault();
             input.value = "Mental Health Facilities";
-            
-
+            input.focus();        
         })
-    
     }
+    mentalHealth();
+    
+   //Financial Assistance//
+      function financialAssitance(){
+        financialAssiBtnEl.addEventListener("click",  function (event){
+            event.preventDefault();
+            input.value = "Financial Assistance";
+            input.focus();        
+        })
+    }
+    financialAssitance();
 
-    mentalHealth()
+    //Public Health Clinics//
+    function publicHealth(){
+        publicHealthBtnEl.addEventListener("click",  function (event){
+            event.preventDefault();
+            input.value = "Public Health Clinics";
+            input.focus();        
+        })
+    }
+    publicHealth();
+
+    
+
+    //LGBTQIA+ Support
+    function lgbtqia(){
+        lgbtqiaBtnEl.addEventListener("click",  function (event){
+            event.preventDefault();
+            input.value = "LGBT";
+            input.focus();        
+        })
+    }
+    lgbtqia();
+
+    
+
+    //Cultural Organizations//
+    function culturalOrg(){
+        culturalBtnEl.addEventListener("click",  function (event){
+            event.preventDefault();
+            input.value = "Cultural Organizations";
+            input.focus();        
+        })
+    }
+    culturalOrg();
+
+     
+/*Comming soon
+    //Milk Banks//
+    function milkBanks(){
+        milkBtnEl.addEventListener("click",  function (event){
+            event.preventDefault();
+            input.value = "Milk Banks";
+            input.focus();        
+        })
+    }
+    milkBanks();
+*/
 
 //************************* //
 
