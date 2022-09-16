@@ -51,10 +51,67 @@ function initAutocomplete() {
     // Create the search box and link it to the UI element.
     var input = document.getElementById("pac-input");
 
+
     //************Input User's value*********************//
     var inputVal = document.getElementById("pac-input").value;
     console.log(inputVal);
     //************Input User's value*********************//
+
+    var inputVal = document.getElementById("pac-input").value;
+    var shelterBtnEl = document.getElementById ("shelterBtn");
+
+
+    var foodBanksBtnEl = document.getElementById ("foodBanksBtn");
+
+    function userChoiceShelter(){
+        shelterBtnEl.addEventListener("click",  function (event){
+            event.preventDefault();
+            input.value = "shelter";
+            
+        })
+    
+    }
+
+    userChoiceShelter();
+
+    function userChoiceFoodBanks(){
+        foodBanksBtnEl.addEventListener("click",  function (event){
+            event.preventDefault();
+            input.value = "foodbanks";
+
+        })
+    
+    }
+
+    userChoiceFoodBanks();
+
+    var womenShelterEl = document.getElementById ("womenShelterBtn");
+
+    function userChoiceWomenShelter(){
+        womenShelterEl.addEventListener("click",  function (event){
+            event.preventDefault();
+            input.value = "Women Shelter";
+
+        })
+    
+    }
+
+    userChoiceWomenShelter();
+
+    var womenShelterEl = document.getElementById ("MentalBtn");
+    function mentalHealth(){
+        womenShelterEl.addEventListener("click",  function (event){
+            event.preventDefault();
+            input.value = "Mental Health Facilities";
+            
+
+        })
+    
+    }
+
+    mentalHealth()
+
+//************************* //
 
     var searchBox = new google.maps.places.SearchBox(input);
     console.log(searchBox);
