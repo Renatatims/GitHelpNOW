@@ -224,5 +224,9 @@ h1 {
 .card-content {
     font-family: "poppins", sans-serif;
 }
+
+#edo-donate-btn{
+  padding: 20px;
+}
   
 /* >>>>>>> 2ded16be219f510d55533f0269c3854330663a08  */
