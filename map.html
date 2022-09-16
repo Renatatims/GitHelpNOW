@@ -63,52 +63,57 @@
   </nav>
   
   <!--HERO-->
-    <section class="hero is-primary">
-      <div class="hero-body ">
-        <p class="title">
-          Resource Locator 
-        </p>
-        <p class="subtitle">
-          To ulitize this function, first share your location or enter your zip code in the text box below. Then, select one or more checkboxes based on your needs. Once both of these steps are completed, watch as the map populates with resources available in your direct area!
-        </p>
-      </div>
-    </section>
-    <br>
+  <section class="hero is-info">
+    <div class="hero-body">
+      <p class="title">
+        Locate Resources
+      </p>
+      <p class="subtitle">
+        To utilize this function, first share your location or enter your zip code in the search bar below.
+        Then, click one of the featured buttons based on your needs. After completing those steps, press enter and watch 
+        as the map populates with resources in your direct area. 
+      </p>
+    </div>
+  </section>
+    <!--Category selection-->
+      <section class="hero is-info">
+       <div class="hero-body has-text-centered">
+        <p class="title">Please Select a Category:</p>
+        <div class="flex">
+          <button class="button is-warning"id="shelterBtn" >Shelter</button>
+          <button class="button is-warning" id="foodBanksBtn" >Food Banks</button>
+          <button class="button is-warning"id="womenShelterBtn" >Women's Shelter</button>
+          <button class="button is-warning"id="MentalBtn" >Mental Health Facilities</button>
+          <p id="demo"></p>
+          <p id="lastCoords"></p>
+          <br></br>
+        </div>
+     </div>
+  </section>
+   
+   <section id="map-section"class="hero is-info">
+    <div class="test1">
+     <input
+       id="pac-input"
+       class="controls"
+       type="text"
+       placeholder="Please enter your ZIP Code"
+     />
     
- <!--Category selection-->
- <h2 class="has-text-weight-bold">Please select a Category</h2>
- <button id="shelterBtn" >Shelter</button>
- <button id="foodBanksBtn" >Food Banks</button>
- <button id="womenShelterBtn" >Women's Shelter</button>
- <button id="MentalBtn" >Mental Health Facilities</button>
-
-<!--End of Category selection-->
-
-<!--Input - google maps API-->
-    <p id="demo"></p>
-    <p id="lastCoords"></p>
-    <br></br>
-      <input
-        id="pac-input"
-        class="controls"
-        type="text"
-        placeholder="Please enter your ZIP Code"
-      />
-<!--end of Input - google maps API-->
-
-<!--Google maps - MAP-->
-    <div id="map"></div>
-    <!--
-     The `defer` attribute causes the callback to execute after the full HTML
-     document has been parsed. For non-blocking uses, avoiding race conditions,
-     and consistent behavior across browsers, consider loading using Promises
-     with https://www.npmjs.com/package/@googlemaps/js-api-loader.
-    -->
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initAutocomplete&libraries=places&v=weekly"
-      defer
-    ></script>
-    <script src="./assets/js/mapscript.js"></script>
+      <div id="map"></div>
+    </div>
+    </section>
+   <!--
+    The `defer` attribute causes the callback to execute after the full HTML
+    document has been parsed. For non-blocking uses, avoiding race conditions,
+    and consistent behavior across browsers, consider loading using Promises
+    with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+   -->
+   <script
+     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&libraries=places&callback=initAutocomplete&libraries=places&v=weekly"
+     defer
+   ></script>
+   <script src="./assets/js/mapscript.js"></script>
 </body>
 <footer class="footer">
   <div class="content has-text-centered">
