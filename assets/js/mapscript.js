@@ -25,8 +25,6 @@ function showPosition(position) {
 
 getLocation();
 
-JSON.parse()
-
 console.log(pastLat);
 
 //end of Geolocation//
@@ -52,7 +50,71 @@ function initAutocomplete() {
     }
     // Create the search box and link it to the UI element.
     var input = document.getElementById("pac-input");
+
+
+    //************Input User's value*********************//
+    var inputVal = document.getElementById("pac-input").value;
+    console.log(inputVal);
+    //************Input User's value*********************//
+
+    var inputVal = document.getElementById("pac-input").value;
+    var shelterBtnEl = document.getElementById ("shelterBtn");
+
+
+    var foodBanksBtnEl = document.getElementById ("foodBanksBtn");
+
+    function userChoiceShelter(){
+        shelterBtnEl.addEventListener("click",  function (event){
+            event.preventDefault();
+            input.value = "shelter";
+            
+        })
+    
+    }
+
+    userChoiceShelter();
+
+    function userChoiceFoodBanks(){
+        foodBanksBtnEl.addEventListener("click",  function (event){
+            event.preventDefault();
+            input.value = "foodbanks";
+
+        })
+    
+    }
+
+    userChoiceFoodBanks();
+
+    var womenShelterEl = document.getElementById ("womenShelterBtn");
+
+    function userChoiceWomenShelter(){
+        womenShelterEl.addEventListener("click",  function (event){
+            event.preventDefault();
+            input.value = "Women Shelter";
+
+        })
+    
+    }
+
+    userChoiceWomenShelter();
+
+    var womenShelterEl = document.getElementById ("MentalBtn");
+    function mentalHealth(){
+        womenShelterEl.addEventListener("click",  function (event){
+            event.preventDefault();
+            input.value = "Mental Health Facilities";
+            
+
+        })
+    
+    }
+
+    mentalHealth()
+
+//************************* //
+
     var searchBox = new google.maps.places.SearchBox(input);
+    console.log(searchBox);
     map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
     // Bias the SearchBox results towards current map's viewport.
     map.addListener("bounds_changed", function () {
@@ -63,6 +125,7 @@ function initAutocomplete() {
     // more details for that place.
     searchBox.addListener("places_changed", function () {
         var places = searchBox.getPlaces();
+        console.log(places);
         if (places.length == 0) {
             return;
         }

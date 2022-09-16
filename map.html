@@ -13,7 +13,7 @@
     <!--CSS-->
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     <script type="module" src="./index.js"></script>
-    <title>Git Help NOW!</title>
+    <title>GitHelpNOW!</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     
     
@@ -31,56 +31,76 @@
       <a class="navbar-item" href="index.html">
         <img src="./assets/logo/GitHelpNOW!LOGO.ico">
       </a>
-
+  
       <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
       </a>
     </div>
-
+  
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-start">
         <a class="navbar-item" href="./index.html">
           Home
         </a>
-
+  
         <a class="navbar-item" href="./mission.html">
           Mission
         </a>
-
+  
         <a class="navbar-item" href="map.html">
           GitHelp!
         </a>
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">
-           Help Others
-          </a>
-  
-          <div class="navbar-dropdown">
-              <a class="navbar-item" href="orgs.html">
-                  Food Banks
-              </a>
-              <a class="navbar-item" href="shelters.html">
-                  Shelters
-              </a>
-      </div>
+        <a class="navbar-item" href="orgs.html">
+          GiveHelp!
+        </a>
       </div>
     </div>
+    <div id="edo-donate-btn">
+      <a href="https://www.every.org/lafoodbank/donate">Donate</a>
+    </div>
   </nav>
-     <!--Category selection-->
-     <section class="section is-medium">
-      <div>
-        <h1>Enter your zip code to locate resources within your area</h1>
-      </div>
-      <div>
-        <input class="input is-link" id="userInputHome" type="text" placeholder="Please enter your ZIP Code">
-        <br></br>
-      </div>
   
-      <!--  Category selection - Checkboxes-->
-
+  <!--HERO-->
+    <section class="hero is-primary">
+      <div class="hero-body ">
+        <p class="title">
+          Resource Locator 
+        </p>
+        <p class="subtitle">
+          To ulitize this function, first share your location or enter your zip code in the text box below. Then, select one or more checkboxes based on your needs. Once both of these steps are completed, watch as the map populates with resources available in your direct area!
+        </p>
+      </div>
     </section>
+    <br>
+     <!--Category selection-->
+    <h2 class="has-text-weight-bold">Please select a Category</h2>
+    <label class="checkbox">
+      <input type="checkbox">
+      Shelter
+    </label>
+    <label class="checkbox">
+      <input type="checkbox">
+      Food Banks
+    </label>
+    <label class="checkbox">
+      <input type="checkbox">
+      Women's shelter
+    </label>
+    <label class="checkbox">
+      <input type="checkbox">
+      Mental Health Facilities
+    </label>
+    <p id="demo"></p>
+    <p id="lastCoords"></p>
+    <br></br>
+      <input
+        id="pac-input"
+        class="controls"
+        type="text"
+        placeholder="Please enter your ZIP Code"
+      />
     <div id="map"></div>
     <!--
      The `defer` attribute causes the callback to execute after the full HTML
@@ -94,4 +114,11 @@
     ></script>
     <script src="./assets/js/mapscript.js"></script>
 </body>
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      <strong>Any Questions or Concerns?</strong> <a href = "mailto: GitHelpNOW@gmail.com">Email Us</a>
+    </p>
+  </div>
+</footer>
 </html>
