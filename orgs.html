@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitHelpNOW!</title>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"> 
     <!--BULMA STYLESHEET-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
     <!--CSS-->
@@ -45,7 +49,7 @@
 
                 <div class="navbar-item has-dropdown is-hoverable">
                     <a class="navbar-link">
-                     Help Others
+                     GiveHelp!
                     </a>
             
                     <div class="navbar-dropdown">
@@ -59,112 +63,137 @@
             </div>
         </div>
     </nav>
-
     <!--End of NAVBAR-->
-<div id="organizations">
+    <section class="hero is-success">
+        <div class="hero-body">
+          <p class="title">
+            Eager to GiveHelp to the Community?
+          </p>
+          <p class="subtitle">
+            Donate to one of our featured non-profit organizations!
+          </p>
+        </div>
+      </section>
 
-    <!--Facility 0-->
+    <div id="organizations">
+    
+        <!--Facility 0-->
 
-    <article class="media">
-        <figure class="media-left">
-            <p class="image is-64x64">
-                <img id="logoOrg0">
-            </p>
-        </figure>
-        <div class="media-content">
-            <div class="content">
-                <div>
-                    <strong id="nameOrg0">Organization Name</strong>
-                    <br>
-                    <p id="descriptionOrg0"></p>
+        <div class="card">
+            <div class="card-content">
+            <div class="media">
+                <div class="media-left">
+                <figure class="image is-48x48">
+                    <img id="logoOrg0">
+                </figure>
                 </div>
-                <a id="visitBtn0" target="_"><button class="button is-success">Visit</button></a>
-            </div>
-
-    </article>
-
-    <!--Facility 1-->
-
-    <article class="media">
-        <figure class="media-left">
-            <p class="image is-64x64">
-                <img id="logoOrg1">
-            </p>
-        </figure>
-        <div class="media-content">
-            <div class="content">
-                <div>
-                    <strong id="nameOrg1">Organization Name</strong>
-                    <br>
-                    <p id="descriptionOrg1"></p>
+                <div class="media-content">
+                <p class="title is-4" id="nameOrg0">Organization Name</p>
+                <p class="subtitle is-6"><a href="https://www.eifoodbank.org/">www.eifoodbank.org</a></p>
                 </div>
-                <a id="visitBtn1" target="_"><button class="button is-success">Visit</button></a>
             </div>
-
-    </article>
-
-    <!--Facility 2-->
-
-    <article class="media">
-        <figure class="media-left">
-            <p class="image is-64x64">
-                <img id="logoOrg2">
-            </p>
-        </figure>
-        <div class="media-content">
+        
             <div class="content">
-                <div>
-                    <strong id="nameOrg2">Organization Name</strong>
-                    <br>
-                    <p id="descriptionOrg2"></p>
-                </div>
-                <a id="visitBtn2" target="_"><button class="button is-success">Visit</button></a>
+                <p id="descriptionOrg0"></p>
+                <br>
+                <a id="visitBtn0" target="_"><button class="button is-success">Donate</button></a>
             </div>
+            </div>
+        </div>
 
-    </article>
-
-
-    <!--Facility 3-->
-
-    <article class="media">
-        <figure class="media-left">
-            <p class="image is-64x64">
-                <img id="logoOrg3">
-            </p>
-        </figure>
-        <div class="media-content">
+        <!--Facility 1-->
+        <div class="card">
+            <div class="card-content">
+            <div class="media">
+                <div class="media-left">
+                <figure class="image is-48x48">
+                    <img id="logoOrg1">
+                </figure>
+                </div>
+                <div class="media-content">
+                <p class="title is-4" id="nameOrg1">Organization Name</p>
+                <p class="subtitle is-6"><a href="https://stlfoodbank.org/">www.stlfoodbank.org</a></p>
+                </div>
+            </div>
+        
             <div class="content">
-                <div>
-                    <strong id="nameOrg3">Organization Name</strong>
-                    <br>
-                    <p id="descriptionOrg3"></p>
-                </div>
-                <a id="visitBtn3" target="_"><button class="button is-success">Visit</button></a>
+                <p id="descriptionOrg1"></p>
+                <br>
+                <a id="visitBtn1" target="_"><button class="button is-success">Donate</button></a>
             </div>
+            </div>
+        </div>
 
-    </article>
-
-
-    <!--Facility 4-->
-
-    <article class="media">
-        <figure class="media-left">
-            <p class="image is-64x64">
-                <img id="logoOrg4">
-            </p>
-        </figure>
-        <div class="media-content">
+        <!--Facility 2-->
+        <div class="card">
+            <div class="card-content">
+            <div class="media">
+                <div class="media-left">
+                <figure class="image is-48x48">
+                    <img id="logoOrg2">
+                </figure>
+                </div>
+                <div class="media-content">
+                    <p class="title is-4" id="nameOrg2">Organization Name</p>
+                    <p class="subtitle is-6"><a href="https://www.akroncantonfoodbank.org/">www.akroncantonfoodbank.org</a></p>
+                    </div>
+            </div>
             <div class="content">
-                <div>
-                    <strong id="nameOrg4">Organization Name</strong>
-                    <br>
-                    <p id="descriptionOrg4"></p>
-                </div>
-                <a id="visitBtn4" target="_"><button class="button is-success">Visit</button></a>
+                <p id="descriptionOrg2"></p>
+                <br>
+                <a id="visitBtn2" target="_"><button class="button is-success">Donate</button></a>
             </div>
+            </div>
+        </div>
 
-    </article>
-</div>
+        <!--Facility 3-->
+
+        <div class="card">
+            <div class="card-content">
+            <div class="media">
+                <div class="media-left">
+                <figure class="image is-48x48">
+                    <img id="logoOrg3">
+                </figure>
+                </div>
+                <div class="media-content">
+                <p class="title is-4" id="nameOrg3">Organization Name</p>
+                <p class="subtitle is-6"><a href="https://www.akroncantonfoodbank.org/">www.akroncantonfoodbank.org</a></p>
+                </div>
+            </div>
+        
+            <div class="content">
+                <p id="descriptionOrg3"></p>
+                <br>
+                <a id="visitBtn3" target="_"><button class="button is-success">Donate</button></a>
+            </div>
+            </div>
+        </div>
+
+        <!--Facility 4-->
+
+        <div class="card">
+            <div class="card-content">
+            <div class="media">
+                <div class="media-left">
+                <figure class="image is-48x48">
+                    <img id="logoOrg4">
+                </figure>
+                </div>
+                <div class="media-content">
+                <p class="title is-4" id="nameOrg4">Organization Name</p>
+                <p class="subtitle is-6"><a href="https://riverbendfoodbank.org/">www.riverbendfoodbank.org</a></p>
+                </div>
+            </div>
+        
+            <div class="content">
+                <p id="descriptionOrg4"></p>
+                <br>
+                <a id="visitBtn4" target="_"><button class="button is-success">Donate</button></a>
+            </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -173,5 +202,11 @@
     <script src="./assets/js/nonprofit.js"></script>
 
 </body>
-
+<footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Any Questions or Concerns?</strong> <a href = "mailto: GitHelpNOW@gmail.com">Email Us</a>
+      </p>
+    </div>
+  </footer>
 </html>

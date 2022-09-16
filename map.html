@@ -13,7 +13,7 @@
     <!--CSS-->
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     <script type="module" src="./index.js"></script>
-    <title>Git Help NOW!</title>
+    <title>GitHelpNOW!</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     
     
@@ -53,7 +53,7 @@
           GitHelp!
         </a>
         <a class="navbar-item" href="orgs.html">
-          Help Others
+          GiveHelp!
         </a>
       </div>
     </div>
@@ -61,34 +61,48 @@
       <a href="https://www.every.org/lafoodbank/donate">Donate</a>
     </div>
   </nav>
+  
+  <!--HERO-->
+    <section class="hero is-primary">
+      <div class="hero-body ">
+        <p class="title">
+          Resource Locator 
+        </p>
+        <p class="subtitle">
+          To ulitize this function, first share your location or enter your zip code in the text box below. Then, select one or more checkboxes based on your needs. Once both of these steps are completed, watch as the map populates with resources available in your direct area!
+        </p>
+      </div>
+    </section>
+    <br>
      <!--Category selection-->
-    <h2 class="has-text-weight-bold">Please select a Category</h2>
-    <label class="checkbox">
-      <input type="checkbox">
-      Shelter
-    </label>
-    <label class="checkbox">
-      <input type="checkbox">
-      Food Banks
-    </label>
-    <label class="checkbox">
-      <input type="checkbox">
-      Women's shelter
-    </label>
-    <label class="checkbox">
-      <input type="checkbox">
-      Mental Health Facilities
-    </label>
-    <p id="demo"></p>
-    <p id="lastCoords"></p>
-    <br></br>
-      <input
-        id="pac-input"
-        class="controls"
-        type="text"
-        placeholder="Please enter your ZIP Code"
-      />
-    <div id="map"></div>
+        <h2 class="has-text-weight-bold">Please select one or more categories:</h2>
+        <label class="checkbox">
+          <input type="checkbox">
+          Shelter
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          Food Banks
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          Women's shelter
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          Mental Health Facilities
+        </label>
+        <p id="demo"></p>
+        <p id="lastCoords"></p>
+          <input
+            id="pac-input"
+            class="controls"
+            type="text"
+            placeholder="Please enter your ZIP Code"
+          />
+    <div class="container is-fluid"></div>
+     <div id="map"></div>
+    </div>
     <!--
      The `defer` attribute causes the callback to execute after the full HTML
      document has been parsed. For non-blocking uses, avoiding race conditions,
@@ -101,4 +115,11 @@
     ></script>
     <script src="./assets/js/mapscript.js"></script>
 </body>
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      <strong>Any Questions or Concerns?</strong> <a href = "mailto: GitHelpNOW@gmail.com">Email Us</a>
+    </p>
+  </div>
+</footer>
 </html>
