@@ -234,5 +234,14 @@ h1 {
 #edo-donate-btn{
   padding: 20px;
 }
+
+
+/* NEW ADDITIONS */
+@media screen and (max-width: 10000px) {
+  .mobile {
+    display: none;
+  }
+}
+/* NEW ADDITIONS END */
   
 /* >>>>>>> 2ded16be219f510d55533f0269c3854330663a08  */
