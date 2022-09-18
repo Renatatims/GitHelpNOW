@@ -10,6 +10,7 @@ function createWidget() {
         nonprofitSlug: "lafoodbank",
         primaryColor: COLOR,
         showInitialMessage: false,
+        completeDonationInNewTab: true,
         defaultFrequency: "once",
         infoPages: [
           {
