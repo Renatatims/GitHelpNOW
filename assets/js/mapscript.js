@@ -5,7 +5,7 @@ var pastLong = JSON.parse(localStorage.getItem("longitude"));
 
 var y = document.getElementById("lastCoords");
 y.innerHTML = "Your last recorded latitude: " + pastLat +
-"<br>Your last recorded Longitude: " + pastLong;
+"<br>Your last recorded longitude: " + pastLong;
 
 var x = document.getElementById("demo");
 function getLocation() {
@@ -25,9 +25,30 @@ function showPosition(position) {
 
 getLocation();
 
-console.log(pastLat);
-
 //end of Geolocation//
+
+
+
+//timer//
+//waits until the user shares location or not to refresh, generating an updated map
+
+// timeLeft = 7;
+// var timer = setInterval(function() {
+//     timeLeft--;
+//     var updatedLatitude = JSON.parse(localStorage.getItem("latitude"))
+//     console.log(timeLeft);
+//     if (timeLeft === 0 && typeof updatedLatitude == 'number' && pastLat == null) {
+//         clearInterval(timer);
+//         window.location.reload();
+//     }
+//     else if (timeLeft === 0) {
+//         console.log("not refreshing");
+//         clearInterval(timer);
+//     }
+// }, 1000);
+
+//end of timer//
+
 
 
 
