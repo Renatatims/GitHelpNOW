@@ -29,27 +29,6 @@ getLocation();
 
 
 
-//timer//
-//waits until the user shares location or not to refresh, generating an updated map
-
-// timeLeft = 7;
-// var timer = setInterval(function() {
-//     timeLeft--;
-//     var updatedLatitude = JSON.parse(localStorage.getItem("latitude"))
-//     console.log(timeLeft);
-//     if (timeLeft === 0 && typeof updatedLatitude == 'number' && pastLat == null) {
-//         clearInterval(timer);
-//         window.location.reload();
-//     }
-//     else if (timeLeft === 0) {
-//         console.log("not refreshing");
-//         clearInterval(timer);
-//     }
-// }, 1000);
-
-//end of timer//
-
-
 
 
 "use strict";
