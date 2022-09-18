@@ -1,6 +1,15 @@
 # GitHelpNOW
 
-<--Hayley: About Us and Mission -->
+# About Us
+
+GitHelpNOW! is committed to serving the community through our application. Established in 2022 by a group of four software development students, our primary goal was to create an online environment that promotes inclusivity and makes community resources more accessible to the public.
+
+Further, we at GitHelpNOW! believe that access to community resources should be more approachable and that no one should feel discouraged when asking for help. We recognize that there are dismissive stigmas surrounding reliance on community resources, and our hope with GitHelpNOW! is to eliminate this negative culture. It takes great strength to ask for help, and we want every user to feel safe and humanized in their moment of need.
+
+
+# Mission
+
+Our Mission here at GitHelpNOW! is to make community resources more accessible and reduce negative stigmas surrounding the utilization of said resources.
 
 ## Preview
 
