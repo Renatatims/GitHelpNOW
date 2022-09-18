@@ -112,9 +112,18 @@ h1 {
  * that contains the map. 
  */
  #map {
-    height: 100%;
+    width: 950px;
+    height: 550px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
   }
   
+  #map-section{
+    align-items: center;
+    padding-bottom: 150px;
+
+  }
+ 
   /* /* 
    * Optional: Makes the sample page fill the window. 
    */
@@ -216,6 +225,14 @@ h1 {
   font-family: "Poppins", sans-serif;
   font-size: 3vw;
   font-style: underline;
+}
+
+.card-content {
+    font-family: "poppins", sans-serif;
+}
+
+#edo-donate-btn{
+  padding: 20px;
 }
 
 
