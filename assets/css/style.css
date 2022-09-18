@@ -7,12 +7,12 @@
   margin: auto;
 }
 
-/* Hide the images by default */
+/* SLIDESHOW Hide the images by default */
 .mySlides {
   display: none;
 }
 
-/* Next & previous buttons */
+/* SLIDESHOW Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -28,13 +28,13 @@
   user-select: none;
 }
 
-/* Position the "next button" to the right */
+/* SLIDESHOW Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+/* SLIDESHOW On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
@@ -59,7 +59,7 @@
   top: 0;
 }
 
-/* The dots/bullets/indicators */
+/* SLIDESHOW The dots/bullets/indicators */
 .dot {
   cursor: pointer;
   height: 15px;
@@ -75,7 +75,7 @@
   background-color: #717171;
 }
 
-/* Fading animation */
+/* SLIDESHOW Fading animation */
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
@@ -98,6 +98,7 @@
   padding-right: 30%;
 }
 
+/* Picture Adjustments */
 #hand-image {
   padding-bottom: 2%;
 }
@@ -124,9 +125,6 @@ h1 {
 
   }
  
-  /* /* 
-   * Optional: Makes the sample page fill the window. 
-   */
    html,
   body {
     height: 100%;
@@ -213,6 +211,8 @@ h1 {
   #logoSearch{
     text-align:center;
   }
+
+/* Card Content via Mission page*/
 .title {
   font-family: "Poppins", sans-serif;
 }
@@ -231,6 +231,7 @@ h1 {
     font-family: "poppins", sans-serif;
 }
 
+/*Donate Button*/ 
 #edo-donate-btn{
   padding: 20px;
 }
@@ -244,4 +245,3 @@ h1 {
 }
 /* NEW ADDITIONS END */
   
-/* >>>>>>> 2ded16be219f510d55533f0269c3854330663a08  */
