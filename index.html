@@ -23,10 +23,6 @@
         <img src="./assets/logo/GitHelpNOW!LOGO.ico">
       </a>
       <!--mobile screen size navbar items BEGINING-->
-      <a class="navbar-item mobile" href="./index.html">
-        Home
-      </a>
-
       <a class="navbar-item mobile" href="./mission.html">
         Mission
       </a>
@@ -35,9 +31,10 @@
         GitHelp!
       </a>
       <a class="navbar-item mobile" href="orgs.html">
-        Help Others
+        GiveHelp
       </a>
       <!--mobile screen size navbar items END-->
+  
     </div>
 
     <div id="navbarBasicExample" class="navbar-menu">
@@ -54,17 +51,24 @@
           GitHelp!
         </a>
         <a class="navbar-item" href="orgs.html">
-          GiveHelp!
+          GiveHelp
         </a>
       </div>
+      <div id="btn-Web">
+        <div id="edo-donate-btn">
+          <a href="https://www.every.org/lafoodbank/donate">Donate</a>
+        </div>
+      </div>
+      
     </div>
-    <!--DONATE BUTTON VIA EVERY.ORG API-->
-    <div id="edo-donate-btn">
-      <a href="https://www.every.org/lafoodbank/donate">Donate</a>
-    </div>
+    <!--DONATE BUTTON VIA EVERY.ORG API-->  
   </nav>
     <!--Hero/Carousel-->
     <section class="img-carousel" >
+      <div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
       <div class="mySlides fade">
         <div class="numbertext">1 / 3</div>
         <img src="./assets/images/githelpnow-banner.png" style="width:100%">
@@ -91,9 +95,6 @@
         <div class="numbertext">3 / 3</div>
         <img src="./assets/images/stronger-together.png" style="width:100%">
       </div>
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      </div>
       <br>
       <div style="text-align:center">
         <span class="dot" onclick="currentSlide(1)"></span>
@@ -102,7 +103,11 @@
       </div>
     </section>
 
-
+    <div id="btn-mobile">
+      <div id="edo-donate-btn">
+        <a href="https://www.every.org/lafoodbank/donate">Donate</a>
+      </div>
+    </div>
   <!--JAVASCRIPT FILE-->
   <script
   async

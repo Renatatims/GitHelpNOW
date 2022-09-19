@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <!--CSS-->
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/stylemap.css" />
     <!--<script type="module" src="./index.js"></script>-->
     <title>GitHelpNOW!</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
@@ -91,15 +91,15 @@
        <div class="hero-body has-text-centered">
         <p class="title">Please Select a Category:</p>
         <div class="flex">
-          <button class="button is-warning"id="shelterBtn" >Shelter</button>
+          <button class="button is-warning"id="shelterBtn" >Shelters</button>
           <button class="button is-warning" id="foodBanksBtn" >Food Banks</button>
           <button class="button is-warning"id="womenShelterBtn" >Women's Shelter</button>
-          <button class="button is-warning"id="mentalBtn" >Mental Health Facilities</button>
-          <br></br>
-          <button class="button is-warning"id="financialAssiBtn" >Financial Assistance</button>
-          <button class="button is-warning"id="publicHealthBtn" >Public Health Clinics</button>
-          <button class="button is-warning"id="lgbtqiaBtn" >LGBTQIA+ Support</button>
-          <button class="button is-warning"id="culturalBtn" >Cultural Organizations</button>
+          <button class="button is-warning"id="mentalBtn" >Mental Health</button>
+        <br></br>
+          <button class="button is-warning"id="financialAssiBtn" >Financial Assist</button>
+          <button class="button is-warning"id="publicHealthBtn" >Public Health</button>
+          <button class="button is-warning"id="lgbtqiaBtn" >LGBTQIA+</button>
+          <button class="button is-warning"id="culturalBtn" >Cultural Orgs</button>
          </div>
      </div>
   </section>
@@ -110,30 +110,31 @@
        id="pac-input"
        class="controls"
        type="text"
-       placeholder="Please enter your ZIP Code"
+       placeholder="Enter ZIP Code"
      />
     
       <div id="map"></div>
     </div>
+    <br></br>
     <p id="demo"></p>
     <p id="lastCoords"></p>
     </section>
 
+  <!--FOOTER-->
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong>Any Questions or Concerns?</strong> <a href = "mailto: GitHelpNOW@gmail.com">Email Us</a>
+        </p>
+      </div>
+    </footer>
     
-
    <script
      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA835uP2QZiRh1EYDlsYvjDLBjBPYQ_B18&libraries=places&callback=initAutocomplete&libraries=places&v=weekly"
      defer
    ></script>
    <script src="./assets/js/mapscript.js"></script>
-</body>
+   
 
-<!--FOOTER-->
-<footer class="footer">
-  <div class="content has-text-centered">
-    <p>
-      <strong>Any Questions or Concerns?</strong> <a href = "mailto: GitHelpNOW@gmail.com">Email Us</a>
-    </p>
-  </div>
-</footer>
+</body>
 </html>
