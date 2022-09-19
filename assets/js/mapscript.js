@@ -66,7 +66,7 @@ function initAutocomplete() {
     var publicHealthBtnEl = document.getElementById ("publicHealthBtn");
     var lgbtqiaBtnEl = document.getElementById ("lgbtqiaBtn");
     var culturalBtnEl = document.getElementById ("culturalBtn");
-    var milkBtnEl = document.getElementById ("milkBtn");
+    //var milkBtnEl = document.getElementById ("milkBtn");
 
     //User's choice categories - event listener added to each button, so when the user clicks, 
     //the key-word is auto-populated in the search field

@@ -20,7 +20,7 @@
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
+  color: grey;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -107,107 +107,8 @@ h1 {
   font-size: 25px;
   padding-bottom: 2%;
 }
-/* ======= */
-/* /* 
- * Always set the map height explicitly to define the size of the div element
- * that contains the map. 
- */
 
- #map {
-    width: 950px;
-    height: 550px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-
-  }
-  
-  #map-section{
-    align-items: center;
-    padding-bottom: 150px;
-
-  }
-   
-   html,
-  body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  
-  #description {
-    font-family: Roboto;
-    font-size: 15px;
-    font-weight: 300;
-  }
-  
-  #infowindow-content .title {
-    font-weight: bold;
-  }
-  
-  #infowindow-content {
-    display: none;
-  }
-  
-  #map #infowindow-content {
-    display: inline;
-  }
-  
-  .pac-card {
-    background-color: #fff;
-    border: 0;
-    border-radius: 2px;
-    box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
-    margin: 10px;
-    padding: 0 0.5em;
-    font: 400 18px Roboto, Arial, sans-serif;
-    overflow: hidden;
-    font-family: Roboto;
-    padding: 0;
-  }
-  
-  #pac-container {
-    padding-bottom: 12px;
-    margin-right: 12px;
-  }
-  
-  .pac-controls {
-    display: inline-block;
-    padding: 5px 11px;
-  }
-  
-  .pac-controls label {
-    font-family: Roboto;
-    font-size: 13px;
-    font-weight: 300;
-  }
-  
-  #pac-input {
-    background-color: #fff;
-    font-family: Roboto;
-    font-size: 15px;
-    font-weight: 300;
-    margin-left: 12px;
-    padding: 0 11px 0 13px;
-    text-overflow: ellipsis;
-    width: 400px;
-  }
-  
-  #pac-input:focus {
-    border-color: #4d90fe;
-  }
-  
-  #title {
-    color: #fff;
-    background-color: #4d90fe;
-    font-size: 25px;
-    font-weight: 500;
-    padding: 6px 12px;
-  }
-  
-  #target {
-    width: 345px;
-  } */
-
-  logoSearch Div to align image
+/*logoSearch Div to align image*/
 
   #logoSearch{
     text-align:center;
@@ -235,14 +136,38 @@ h1 {
 /*Donate Button*/ 
 #edo-donate-btn{
   padding: 20px;
+
+}
+
+#missionHero{
+  padding: 15px;
+  margin-bottom: 20px;
+ 
 }
 
 
-/* NEW ADDITIONS */
-@media screen and (max-width: 10000px) {
+/* @media content */
+@media screen and (min-width: 1024px) {
   .mobile {
     display: none;
   }
+  #btn-mobile{
+    display: none;
+  }
 }
-/* NEW ADDITIONS END */
+
+@media screen and (max-width: 1024px){
+  #btn-Web{
+    display: none;
+  }
+  #btn-mobile{
+    display: flex;
+    justify-content: center;
+  }
+  .prev, .next {
+    top: 20%;
+  }
+}
+
+
   
