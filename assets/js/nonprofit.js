@@ -1,5 +1,7 @@
 var APIkey = "aff405eca8c6c3b65de5c821a36553f7"
-   
+
+
+//Food Bank - search Every.org API to auto-populate 5 non-profit organizations - org.html//
 
 function foodBank(){
     var queryUrl = "https://partners.every.org/v0.2/search/foodbank?apiKey=aff405eca8c6c3b65de5c821a36553f7";
@@ -32,7 +34,7 @@ function foodBank(){
  
 foodBank();
 
-
+//Shelter - search Every.org API to auto-populate 5 non-profit organizations - shelter.html//
 
 function shelter(){
     var queryUrl = "https://partners.every.org/v0.2/search/house?apiKey=aff405eca8c6c3b65de5c821a36553f7";
@@ -66,6 +68,7 @@ function shelter(){
 shelter();
 
 
+//Women Shelters - search Every.org API to auto-populate 5 non-profit organizations - womenshelter.html//
 
 function womenShelter(){
     var queryUrl = "https://partners.every.org/v0.2/search/Womenshelter?apiKey=aff405eca8c6c3b65de5c821a36553f7";
@@ -96,6 +99,8 @@ function womenShelter(){
         })}})};
  
 womenShelter();
+
+//Mental Health Facilities - search Every.org API to auto-populate 5 non-profit organizations - mentalhealth.html//
 
 function mentalHealth(){
     var queryUrl = "https://partners.every.org/v0.2/search/mental?apiKey=aff405eca8c6c3b65de5c821a36553f7";
