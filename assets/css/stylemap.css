@@ -132,3 +132,14 @@
     
       }   
     }
+
+    
+/* @media content */
+@media screen and (min-width: 1024px) {
+  .mobile {
+    display: none;
+  }
+  #btn-mobile{
+    display: none;
+  }
+}
