@@ -112,6 +112,7 @@ h1 {
  * Always set the map height explicitly to define the size of the div element
  * that contains the map. 
  */
+
  #map {
     width: 950px;
     height: 550px;
@@ -124,7 +125,7 @@ h1 {
     padding-bottom: 150px;
 
   }
- 
+   
    html,
   body {
     height: 100%;
