@@ -106,7 +106,14 @@
 
   /*@media Screen - display map - size changed according to screen size*/
 
+  @media screen and (min-width: 1024px) {
+    .mobile {
+      display: none;
+    }
+  }
+
   @media screen and (max-width: 1024px){
+    
     #map {
         width: 600px;
         height: 600px;

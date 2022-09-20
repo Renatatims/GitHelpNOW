@@ -15,6 +15,10 @@ Our Mission here at GitHelpNOW! is to make community resources more accessible a
 
 ![Preview](./assets/screenshots/preview.png)
 
+## Link to application:
+
+https://renatatims.github.io/GitHelpNOW/
+
 
 # Features:
 
@@ -27,12 +31,15 @@ Main Page
 ## Person in Need - GitHelp!:
 
 1. GitHelp! - opens a page that contains a map and categories to be selected.
+![Preview](./assets/screenshots/previewMap.PNG)
 
 2. The map is initiated with the User's current location. The coordinates are identified and stored for future reference.
 
 3. Once the user selects a category the locations are displayed in the map.
 
 4. When a different category is selected, then a new search occurs and the locations from this new search is displayed on the map.
+
+![Preview](./assets/screenshots/dropDownMenu%20(2).gif)
 
 ## Person that wants to help - GiveHelp!:
 
